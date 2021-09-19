@@ -1,0 +1,10 @@
+--- python-systemd-234/systemd/util.c.orig
++++ python-systemd-234/systemd/util.c
+@@ -31,6 +31,7 @@
+ #include <fcntl.h>
+ #include <unistd.h>
+ #include <net/if.h>
++#include <endian.h>
+ 
+ #define strndupa(s, n) \
+   ({ \
